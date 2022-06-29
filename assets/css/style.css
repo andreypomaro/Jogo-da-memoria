@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.cartao {
+  aspect-ratio: 3/4;
+  width: 100%;
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 400ms ease;
+}
+
+.frente {
+  background-size: contain;
+  transform: rotateY(180deg);
+}
+
+.costa {
+  background-image: url(/assets/img/facedragonball.jpg);
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.revelarCarta {
+  transform: rotateY(180deg);
+}
+
+.desabilitar-carta {
+  filter: saturate(0);
+  opacity: 0.5;
+}
