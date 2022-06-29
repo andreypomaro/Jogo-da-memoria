@@ -78,7 +78,7 @@ const criarCarta = (personagem) => {
   const frente = criarElemento('div', 'face frente');
   const costa = criarElemento('div', 'face costa');
 
-  frente.style.backgroundImage = `url('/assets/img/${personagem}.jpg')`;
+  frente.style.backgroundImage = `url('/assets/img/${personagem}.png')`;
 
   cartao.appendChild(frente);
   cartao.appendChild(costa);
